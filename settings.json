@@ -1,0 +1,75 @@
+{
+    //editor settings
+    "workbench.colorTheme": "Default Dark Modern",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.iconTheme": "vscode-icons",
+    //background settings
+    "background.enabled": true,
+    "background.fullscreen": {
+        "images": ["file:///C:/kaisa.jpg", "file:///C:/kaisa2.jpg",
+                    "file:///C:/prettykaisastarguardian.jpg"], // urls of your images
+        "opacity": 0.88, // 0.85 ~ 0.95 recommended
+        "size": "cover", // also css, `cover` to self-adaption (recommended)，or `contain`、`200px 200px`
+        "position": "right", // alias to `background-position`, default `center`
+        "interval": 30 // seconds of interval for carousel, default `0` to disabled.
+    },
+
+    //indent rainbow settings
+    "indentRainbow.excludedLanguages": [
+        "plaintext"
+    ],
+    "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 3,
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.32)",
+        "rgba(127,255,127,0.37)",
+        "rgba(255,127,255,0.5)",
+        "rgba(79,236,236,0.5)"
+    ],
+
+    //todo and other keywords highlighting settings
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "yellow",
+            "border": "1px solid yellow",
+            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,0,0,.2)"
+        },
+        {
+            "text": "FIXME:",
+            "color": "red",
+            "border": "1px solid red",
+            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,0,0,.2)"
+        }
+    ],
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.csharp"
+    ],
+    "todohighlight.exclude": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**"
+    ],
+    "todohighlight.maxFilesForSearch": 5120,
+    "todohighlight.toggleURI": false
+}
